@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 292px;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    position: fixed;
+}
+
+
+
+nav {
+    width: 260px;
+    height: 609px; /* Set an appropriate height */
+    border-right: 1px solid white; /* For visibility */
+    background-color: black; /* Temporary color to help spot it */
+    padding: 0px 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    padding: 2px 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+} 
+
+.logo svg{
+    height: 30px;
+    width: 50px;
+    fill: rgb(231, 233, 234);
+}
+
+.navitems span {
+    display: inline-block; /* Makes the span behave more like a block-level element */
+}
+
+
+.navitems {
+    padding: 12px;
+    text-decoration: none;
+    color: #E7E9EA;
+    font-size: 20px;
+    display: flex;
+    gap: 17px;
+    align-items: stretch;
+    cursor: pointer;
+}
+
+.home {
+    width: 143px;
+    height: 50px;
+    border-radius: 27px;
+    justify-self: center;
+}
+
+.explore {
+    width: 158px;
+    height: 50px;
+    border-radius: 27px;
+}
+
+.notifications {
+    width: 209px;
+    height: 50px;
+    border-radius: 27px;
+}
+
+.messages {
+    width: 178px;
+    height: 50px;
+    border-radius: 27px;;
+}
+
+.grok {
+    width: 130px;
+    height: 50px;
+    border-radius: 27px;
+}
+
+.profile {
+    width: 150px;
+    height: 50px;
+    border-radius: 27px;
+}
+
+.more {
+    width: 133px;
+    height: 50px;
+    border-radius: 27px;
+}
+
+a svg {
+    width: 26px;
+    height: 26px;
+    fill: rgb(231, 233, 234);
+
+}
+
+#post-button {
+    width: 233px;
+    height: 52px;
+    background-color: #1D9BF0; /* X (Twitter) blue */
+    text-align: center;
+    text-decoration: none;
+    color: #fff; /* White text */
+    font-size: 17px;
+    font-weight: bold; /* Mimics the bold font style */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px; /* Rounded corners */
+    bottom: 123px; /* Distance from the bottom */
+    display: flex;
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    cursor: pointer; /* Pointer cursor for interaction */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#post-button:hover {
+    background-color: #1A8CD8; /* Slightly darker blue on hover */
+}
+
+
+
+#profile-action svg {
+    width: 19px;
+    height: 19px;
+    position: relative;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border: 1px solid red;
+    position: absolute;
+    top: 0;
+    right: 74%;
+}
+
+#profile-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 5%;
+    width: 235px;
+    height: 41px;
+    padding: 32px;
+    position: absolute;
+    left: 28px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc; /* Placeholder color for profile picture */
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+    align-self: center;
+    position: absolute;
+    top: 13px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column; /* Stack the spans vertically */
+    justify-content: center;
+    flex-grow: 1; /* Take up available space */
+}
+
+.profile-info span:first-child {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.profile-info span:last-child {
+    font-size: 12px;
+    color: gray; /* Different color for the handle */
+}
+
+.action-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-left: 10px;
+    fill: #1d9bf0; /* X's blue color for the icon */
+}
+
+a:hover {
+    background-color: #2a2a2a; /* Light grey for hover */
+}
+
+.profile-name {
+    color: white;
+}
+
+#profile-action:hover {
+    background: #2a2a2a;
+    border-radius: 58px;
+    padding: 32px;
+}
+
+.more-action {
+    fill: rgb(231, 233, 234);
+}
+
+
+
+
+
