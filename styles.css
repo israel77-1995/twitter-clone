@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    font-family: 'Helvetica Neue', Arial, 'Segoe UI', sans-serif;
+}
+.banner {
+    width: 398px;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end; /* Moves banner-content to the end */
+    align-items: center; /* Vertically center the content */
+    background-color: black; /* Background color */
+    border-right: 0.8px solid rgb(47, 51, 54); /* Optional border for separation */
+}
+
+.banner-content{
+    width: 258px;
+    height: 100vh;
+    cursor: pointer;
+    background-color: black;
+}
+
+/* Container for the logo section */
+#logo-section {
+    padding: 10px;
+    background-color: #fff; /* Optional: Background color */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 25px;
+    margin-top: 5px;
+}
+
+#logo-section:hover {
+    background-color: rgb(22, 24, 28); /* Change background color on hover */
+}
+
+/* Logo Icon Styling */
+.logo-icon {
+    display: flex;
+    justify-content: center;
+    width: 30px; /* Adjust based on your desired size */
+    height: 30px;
+    fill: rgb(231,233, 234); 
+    margin-bottom: 6px;
+}
+
+
+/* Individual icon with caption */
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 18px; /* Space between icon and caption */
+    cursor: pointer; /* Show pointer to indicate it's clickable */
+    transition: background-color 0.3s ease; /* Add hover effect */
+    padding: 5px 10px;
+    border-radius: 20px; /* Rounded hover effect */
+    color: rgb(231,233, 234);
+    height: 50px;
+    width: auto;
+
+}
+
+/* Icon styling */
+.nav-item-icon {
+    width: 26px; /* Adjust the size */
+    height: 26px;
+    fill: rgb(231,233, 234);
+}
+
+/* Caption styling */
+.icon-label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.nav-item.active{
+    width: 143px;
+    border-radius: 30px;
+}
+
+.nav-2 {
+    width: 150px;
+    border-radius: 30px;
+}
+
+.nav-3 {
+    width: 200px;
+    border-radius: 30px;
+}
+
+.nav-4 {
+    width: 175px;
+    border-radius: 30px;
+}
+
+.nav-5 {
+    width: 130px;
+    border-radius: 30px;
+}
+
+.nav-6 {
+    width: 190px;
+    border-radius: 30px;
+}
+
+.nav-7 {
+    width: 209px;
+    border-radius: 30px;
+}
+
+.nav-8 {
+    width: 168px;
+    border-radius: 30px;
+}
+
+.nav-9 {
+    width: 204px;
+    border-radius: 30px;
+}
+
+.nav-10 {
+    width: 145px;
+    border-radius: 30px;
+}
+
+.nav-11 {
+    width: 133px;
+    border-radius: 30px;
+}
+.nav-item.active .icon-label {
+    font-weight: bold;
+}
+/* Hover effect */
+.nav-item:hover {
+    background-color: rgb(22, 24, 28); /* Light gray background on hover */
+}
+
+/* Container for the Post Button */
+.post-btn-container {
+    display: flex;
+    margin: 20px 0; /* Add vertical spacing */
+    height: 50px;
+}
+
+/* Post Button styling */
+.post-btn {
+    background-color: rgb(241, 243, 245); 
+    color: black; /* White text */
+    font-size: 16px; /* Comfortable text size */
+    font-weight: bold; /* Make the text stand out */
+    padding: 10px 20px; /* Add space inside the button */
+    border: none; /* Remove default border */
+    border-radius: 50px; /* Fully rounded button */
+    cursor: pointer; /* Pointer on hover */
+    width: 233px;
+}
+
+/* Hover and Focus states */
+.post-btn:hover,
+.post-btn:focus {
+    background-color: rgb(215, 218, 219);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+    transition-duration: 0.2s;
+}
+
+/* Optional: Add responsiveness */
+@media (max-width: 600px) {
+    .post-btn {
+        width: 80%; /* Full width for smaller screens */
+        font-size: 14px; /* Slightly smaller font */
+        padding: 8px 16px;
+    }
+}
+
+
+/* Account Info Container */
+.account-info {
+    margin: 30px 0; /* Vertical spacing around the section */
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Align content vertically */
+    width: 245px;
+}
+
+/* Account Button */
+.account-button {
+    display: flex;
+    align-items: center; /* Align elements in the button */
+    background-color: transparent; /* No background for the button */
+    border: none; /* Remove default border */
+    padding: 10px; /* Add padding inside the button */
+    width: 100%; /* Full width button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for the button */
+.account-button:hover {
+    background-color:  rgb(22, 24, 28);/* Light gray background on hover */
+    border-radius: 30px; /* Rounded corners for hover state */
+}
+
+/* Avatar Section */
+.avatar {
+    flex-shrink: 0; /* Prevent shrinking of the avatar */
+    margin-right: 10px; /* Space between avatar and text */
+}
+
+.avatar-img {
+    width: 40px; /* Avatar size */
+    height: 40px;
+    border-radius: 50%; /* Circular avatar */
+    object-fit: cover; /* Ensure the image fits the circle */
+}
+
+/* Name and Handle Section */
+.name-handle {
+    display: flex;
+    flex-direction: column; /* Stack name and handle vertically */
+    justify-content: center; /* Center vertically */
+    flex-grow: 1; /* Take up remaining space */
+}
+
+.account-name {
+    font-size: 16px; /* Slightly larger font for name */
+    font-weight: bold; /* Make the name stand out */
+    color: white; /* Black text */
+}
+
+.account-handle {
+    font-size: 14px; /* Smaller font for handle */
+    color: #555; /* Gray text */
+    margin-top: 2px; /* Slight spacing below the name */
+}
+
+/* 3-dot Menu Section */
+.menu-icon {
+    display: flex;
+    justify-content: center; /* Center the dots */
+    align-items: center; /* Center vertically */
+    margin-left: auto; /* Push to the far right */
+    padding: 5px;
+}
+
+.dots-icon {
+    width: 20px; /* Size of the dots */
+    height: 20px;
+    fill: #555; /* Gray color for the dots */
+    transition: fill 0.3s ease; /* Smooth color change on hover */
+}
+
+
+
