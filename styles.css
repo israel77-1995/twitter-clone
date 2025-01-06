@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body {
-    background-color: black;
+    display: flex;
+    background-color: green;
     font-family: 'Helvetica Neue', Arial, 'Segoe UI', sans-serif;
 }
 .banner {
@@ -256,6 +257,218 @@ body {
     fill: #555; /* Gray color for the dots */
     transition: fill 0.3s ease; /* Smooth color change on hover */
 }
+
+.main-content {
+    width: 566px;
+    height: auto;
+    padding: 0px 16px;
+    background-color: black;
+}
+
+/* Tabs Container */
+.tabs {
+    display: flex;
+    justify-content: space-around; /* Spacing between tabs */
+    align-items: center;
+    height: 53px;
+}
+
+
+/* Individual Tab */
+.tab {
+    flex: 1; /* Equal space for each tab */
+    text-align: center;
+    padding: 12px 0; /* Vertical padding for better click area */
+    font-family: 'Helvetica Neue', Arial, 'Segoe UI', sans-serif; /* Font family */
+    font-size: 18px; /* Font size for tabs */
+    font-weight: 700; /* Bold text */
+    color: #536471; /* Inactive tab color */
+    cursor: pointer; /* Pointer cursor for tabs */
+    transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+}
+
+
+/* Style for each tab */
+.tab {
+    font-size: 16px;
+    font-weight: 600;
+    color: #536471; /* Grey color for inactive tabs */
+    background: none;
+    border: none;
+    padding: 10px;
+    position: relative; /* Needed for the underline */
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Small blue underline div */
+.underline {
+    position: absolute;
+    bottom: -5px; /* Sticks to the bottom of the parent tab */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Align center by adjusting origin */
+    width: 62px; /* Initial width for inactive tabs */
+    height: 4px;
+    background-color: #1d9bf0; /* Blue color */
+    border-radius: 2px; /* Rounded edges */
+    transition: width 0.3s ease; /* Smooth transition effect */
+}
+
+/* Active tab styling */
+.active-tab {
+    color: white; /* Blue color for active tab */
+}
+
+/* Post Container */
+.post {
+    border-bottom: 1px solid #e1e8ed; /* Divider between posts */
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Post Header */
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circular profile picture */
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.handle {
+    color: #536471;
+    font-size: 12px;
+}
+
+/* Post Body */
+.post-body {
+    margin-left: 50px; /* Indent for alignment with the header */
+}
+
+.post-text {
+    font-size: 15px;
+    color: #0f1419;
+}
+
+.post-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Post Footer */
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px; /* Indent to match post body */
+}
+
+.post-footer button {
+    background: none;
+    border: none;
+    color: #536471;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.post-footer button:hover {
+    color: #1d9bf0; /* Twitter blue on hover */
+}
+
+/* Post Container */
+.post {
+    border-bottom: 1px solid #e1e8ed; /* Divider between posts */
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Post Header */
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circular profile picture */
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.handle {
+    color: #536471;
+    font-size: 12px;
+}
+
+/* Post Body */
+.post-body {
+    margin-left: 50px; /* Indent for alignment with the header */
+}
+
+.post-text {
+    font-size: 15px;
+    color: #0f1419;
+}
+
+.post-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Post Footer */
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px; /* Indent to match post body */
+}
+
+.post-footer button {
+    background: none;
+    border: none;
+    color: #536471;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.post-footer button:hover {
+    color: #1d9bf0; /* Twitter blue on hover */
+}
+
+
+/* Active tab underline expands */
+
+
+
+
 
 
 
